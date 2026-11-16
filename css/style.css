@@ -6,27 +6,56 @@
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Import Tech Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1e40af;
-  --accent: #f59e0b;
-  --accent-dark: #d97706;
-  --text: #111827;
-  --text-light: #4b5563;
-  --bg: #ffffff;
-  --bg-soft: #f9fafb;
-  --bg-elevated: #ffffff;
-  --border: #e5e7eb;
-  --header-bg: rgba(255,255,255,0.95);
-  --footer-bg: #0f172a;
-  --radius: 12px;
-  --radius-sm: 8px;
-  --max-width: 1180px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
-  --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+  /* New Cyber-Tech Palette */
+  --primary: #0077ff;
+  --primary-glow: #00aaff;
+  --primary-dark: #003bb3;
+  --accent: #00aaff;
+  
+  --text: #f8fafc; /* Silver/White */
+  --text-light: #94a3b8; /* Muted gray-blue */
+  
+  --bg: #050914; /* Deep space blue */
+  --bg-soft: #0a1128;
+  --bg-elevated: #111c44;
+  
+  --border: #1e3a8a; /* Dark blue border */
+  --header-bg: rgba(5, 9, 20, 0.95);
+  --footer-bg: #02040a;
+  
+  /* Removed rounded corners for a sharp tech look */
+  --radius: 0px; 
+  --radius-sm: 2px;
+  
+  --shadow-glow: 0 0 15px rgba(0, 119, 255, 0.3);
   --transition: 0.2s ease;
 }
+
+/* Force Dark Theme by default */
+html { data-theme="dark"; }
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(0, 119, 255, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(0, 170, 255, 0.05), transparent 25%);
+  background-attachment: fixed;
+}
+
+/* Typography Override */
+h1, h2, h3, h4, .logo span {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ... Keep the rest of the resets ... */
 
 /* ---------- Dark Mode ---------- */
 [data-theme="dark"] {

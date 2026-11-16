@@ -5,8 +5,8 @@
 // ---- Dark Mode ----
 (function initTheme() {
   const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = saved || (prefersDark ? 'dark' : 'light');
+  // Default to dark if no preference is saved
+  const theme = saved || 'dark'; 
   document.documentElement.setAttribute('data-theme', theme);
 })();
 
