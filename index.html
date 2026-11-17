@@ -53,7 +53,7 @@
     <div class="container">
       <nav class="navbar" aria-label="Main navigation">
         <a href="index.html" class="logo" aria-label="MDtech-Solutions home">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#2563eb"/><path d="M9 26V10h4l5 8 5-8h4v16h-3.5V16l-5.5 8.5L12.5 16v10H9z" fill="#fff"/></svg>
+          <img src="images/logo.png" alt="MD Techsolutions Logo" class="logo-img" />
           <span>MDtech<strong>Solutions</strong></span>
         </a>
         
@@ -64,6 +64,7 @@
         <ul class="nav-links" id="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li> <!-- NEW -->
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html" class="btn-nav">Get a Quote</a></li>
         </ul>
@@ -72,20 +73,24 @@
   </header>
 
   <main role="main">
-    <!-- HERO -->
-    <section id="home" class="hero" aria-labelledby="hero-title">
-  <div class="container hero-content">
-    <p class="eyebrow" style="color: var(--primary-glow);">Smart Solutions. Clear Vision. Total Protection.</p>
-    <h1 id="hero-title">Securing Today,<br><span class="highlight" style="color: var(--primary-glow);">Protecting Tomorrow</span></h1>
-    <p class="hero-sub">
-      MD Techsolutions provides reliable CCTV products, professional installation, repairing services, and complete system setup. Serving Zamboanga del Norte.
-    </p>
-    <div class="hero-actions">
-      <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
-      <a href="services.html" class="btn btn-outline">Explore Services</a>
-    </div>
-  </div>
-</section>
+        <!-- HERO (Image Banner) -->
+    <section id="home" class="hero-banner" aria-labelledby="hero-title">
+      <div class="container hero-banner-container">
+        <!-- Visually hidden H1 for SEO -->
+        <h1 id="hero-title" class="sr-only">MD Techsolutions - IT Services in Zamboanga del Norte</h1>
+        
+        <!-- The Flyer Image -->
+          <a href="contact.html" aria-label="Get a quote from MD Techsolutions">
+            <img src="images/mdtech-hero-banner.jpg" alt="MD Techsolutions - Securing Today, Protecting Tomorrow." class="hero-image" fetchpriority="high" />
+          </a>
+        
+        <!-- Optional: Add buttons over or under the image if you want people to click -->
+        <div class="hero-actions-banner">
+          <a href="contact.html" class="btn btn-primary">Request a Free Quote</a>
+          <a href="services.html" class="btn btn-outline">Explore Services</a>
+        </div>
+      </div>
+    </section>
 
     <!-- SERVICES PREVIEW -->
     <section id="services" class="services" aria-labelledby="services-title">
@@ -307,11 +312,8 @@
     <div class="container footer-grid">
       <div>
         <a href="index.html" class="logo footer-logo">
-          <svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-            <rect width="36" height="36" rx="8" fill="#2563eb"/>
-            <path d="M9 26V10h4l5 8 5-8h4v16h-3.5V16l-5.5 8.5L12.5 16v10H9z" fill="#fff"/>
-          </svg>
-          <span>MDtech<strong>Solutions</strong></span>
+          <img src="images/logo.png" alt="MD Techsolutions Logo" class="logo-img" />
+          <span>MDtech<strong>-Solutions</strong></span>
         </a>
         <p class="footer-desc">Secure. Connected. Powered. Your trusted partner for CCTV, computers, solar power, UPS, and solar streetlights.</p>
       </div>

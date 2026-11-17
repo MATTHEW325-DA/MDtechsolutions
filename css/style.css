@@ -168,6 +168,21 @@ h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: 
 .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* ---------- Logo Image ---------- */
+.logo-img {
+  height: 60px; /* Adjust this if your logo is very tall or wide */
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* For mobile, make it slightly smaller */
+@media (max-width: 767px) {
+  .logo-img {
+    height: 32px;
+  }
+}
+
 /* ---------- Theme Toggle ---------- */
 .theme-toggle {
   width: 40px; height: 40px;
@@ -463,6 +478,178 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
 }
 .back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
 .back-to-top:hover { background: var(--primary-dark); }
+
+/* ---------- Hero Image Banner ---------- */
+.hero-banner {
+  padding: 2rem 0;
+  text-align: center;
+  background: var(--bg); /* Keeps it dark */
+}
+
+.hero-banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1500px; /* Limits size on huge screens */
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-glow); /* Adds that tech blue glow around the image */
+}
+
+.hero-actions-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Utility: Visually Hidden (for SEO) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Ensure the image fits perfectly on mobile */
+@media (max-width: 767px) {
+  .hero-banner {
+    padding: 1rem 0;
+  }
+  .hero-image {
+    border-radius: 0; /* Removes corners on mobile so it's edge-to-edge */
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* ---------- Products Page (Horizontal Row Layout) ---------- */
+.products-section {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  background: var(--bg);
+}
+
+/* Change to a single column list */
+.products-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px; /* Keeps the rows from getting too wide on huge screens */
+  margin: 0 auto;
+}
+
+/* Make each card a horizontal row */
+.product-card {
+  display: flex;
+  flex-direction: column; /* Mobile: image on top, text below */
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-glow);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Fix the image size for the row layout */
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+  background: #000;
+}
+
+.product-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.product-category {
+  font-size: 0.75rem;
+  color: var(--primary-glow);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.product-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-info p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed var(--border);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+.product-price {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--primary-glow);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Desktop: Switch to side-by-side (Image Left, Text Right) */
+@media (min-width: 768px) {
+  .product-card {
+    flex-direction: row; /* Horizontal layout */
+    align-items: stretch;
+  }
+  
+  .product-image {
+    width: 35%; /* Image takes up 35% of the card */
+    height: auto; /* Let it fill the height of the row */
+    min-height: 250px;
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+  }
+  
+  .product-info {
+    width: 65%; /* Text takes up the rest */
+    padding: 2rem;
+  }
+}
+
+/* Responsive Grid for Products */
+@media (min-width: 640px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .products-grid { grid-template-columns: repeat(3, 1fr); }
+}
 
 /* ==========================================
    Responsive Breakpoints
