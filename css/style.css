@@ -71,6 +71,84 @@ h3 { font-size: 1.2rem; }
 h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-light); margin-bottom: 0.75rem; }
 /* ... Keep the rest of the resets ... */
 
+/* ---------- Free Installation Top Bar ---------- */
+.promo-bar {
+  background: linear-gradient(90deg, #003bb3, #00aaff, #003bb3);
+  background-size: 200% auto;
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  animation: shine 3s linear infinite;
+  position: relative;
+  z-index: 101; /* Above the header */
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+.promo-bar span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff; /* Glowing text effect */
+}
+
+/* ---------- Free Installation Badge ---------- */
+.product-card {
+  position: relative; /* Required for the badge to sit inside the card */
+}
+
+.free-install-badge {
+  position: absolute;
+  top: 15px;
+  left: -35px;
+  background: #ff0055; /* High-contrast neon red/pink */
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 5px 40px;
+  transform: rotate(-45deg);
+  z-index: 10;
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  pointer-events: none; /* So it doesn't block clicks */
+}
+
+/* ---------- Free Install Highlight Box ---------- */
+.free-install-highlight {
+  background: rgba(0, 170, 255, 0.1);
+  border: 1px solid var(--primary-glow);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  margin: -2rem auto 3rem; /* Pulls it up slightly over the hero */
+  max-width: 800px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 30px rgba(0, 170, 255, 0.2);
+  border-left: 5px solid var(--primary-glow);
+  border-right: 5px solid var(--primary-glow);
+}
+
+.free-install-highlight h2 {
+  color: var(--primary-glow);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(0, 170, 255, 0.5);
+}
+
+.free-install-highlight p {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 /* ---------- Dark Mode ---------- */
 [data-theme="dark"] {
   --text: #f1f5f9;
@@ -495,7 +573,7 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
 
 .hero-image {
   width: 100%;
-  max-width: 1500px; /* Limits size on huge screens */
+  max-width: 1100px; /* Limits size on huge screens */
   height: auto;
   border-radius: var(--radius);
   border: 1px solid var(--border);
