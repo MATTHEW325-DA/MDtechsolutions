@@ -110,3 +110,27 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+// ---- Product Tabs Logic ----
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+if (tabButtons.length > 0) {
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // 1. Remove 'active' class from all buttons and contents
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // 2. Add 'active' class to the clicked button
+      button.classList.add('active');
+
+      // 3. Find the target content ID and show it
+      const targetId = button.getAttribute('data-target');
+      const targetContent = document.getElementById(targetId);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+    });
+  });
+}

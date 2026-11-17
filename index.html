@@ -22,11 +22,11 @@
   <meta name="twitter:description" content="Professional CCTV installation, computer sales, solar power systems, UPS, and solar streetlights." />
   <meta name="twitter:image" content="https://www.mdtech-solutions.com/images/og-image.jpg" />
 
-  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="images/logo.svg" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 
   <script type="application/ld+json">
@@ -36,28 +36,26 @@
     "name": "MDtech-Solutions",
     "description": "Tech company offering CCTV installation, computer sales & repair, solar power systems, UPS, and solar streetlights.",
     "url": "https://www.mdtech-solutions.com",
-    "logo": "https://www.mdtech-solutions.com/images/logo.svg",
+    "logo": "https://www.mdtech-solutions.com/images/logo.png",
     "image": "https://www.mdtech-solutions.com/images/og-image.jpg",
-    "telephone": "+1234567890",
+    "telephone": "+639535902652",
     "email": "info@mdtech-solutions.com",
-    "address": { "@type": "PostalAddress", "streetAddress": "Your Street Address", "addressLocality": "Your City", "addressRegion": "Your Region", "postalCode": "00000", "addressCountry": "Your Country" },
+    "address": { "@type": "PostalAddress", "streetAddress": "Your Street Address", "addressLocality": "Your City", "addressRegion": "Zamboanga del Norte", "postalCode": "00000", "addressCountry": "Philippines" },
     "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-15:00",
     "priceRange": "$$"
   }
   </script>
 </head>
 <body>
-  <!-- PROMO BAR -->
-  <div class="promo-bar">
-    ⚡ <span>FREE INSTALLATION</span> ON ALL CCTV & SOLAR PACKAGES! ⚡
-  </div>
-
-  <!-- HEADER -->
+  
+  <!-- HEADER WITH PROMO BAR STICKY -->
   <header class="site-header" role="banner">
-  ...
+    
+    <!-- PROMO BAR -->
+    <div class="promo-bar">
+      ⚡ <span>FREE INSTALLATION</span> ON ALL CCTV & SOLAR PACKAGES! ⚡
+    </div>
 
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
     <div class="container">
       <nav class="navbar" aria-label="Main navigation">
         <a href="index.html" class="logo" aria-label="MDtech-Solutions home">
@@ -65,14 +63,14 @@
           <span>MDtech<strong>Solutions</strong></span>
         </a>
         
-          <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-            <span></span><span></span><span></span>
-          </button>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
 
         <ul class="nav-links" id="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="products.html">Products</a></li> <!-- NEW -->
+          <li><a href="products.html">Products</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html" class="btn-nav">Get a Quote</a></li>
         </ul>
@@ -81,29 +79,30 @@
   </header>
 
   <main role="main">
-        <!-- HERO (Image Banner) -->
+    <!-- HERO (Image Banner) -->
     <section id="home" class="hero-banner" aria-labelledby="hero-title">
       <div class="container hero-banner-container">
         <!-- Visually hidden H1 for SEO -->
         <h1 id="hero-title" class="sr-only">MD Techsolutions - IT Services in Zamboanga del Norte</h1>
-            <!-- FREE INSTALL HIGHLIGHT -->
-    <section class="container">
-      <div class="free-install-highlight">
-        <h2>⚡ FREE PROFESSIONAL INSTALLATION ⚡</h2>
-        <p>Purchase any CCTV System, Solar Power Setup, or Solar Streetlights from MD Techsolutions and we will install it absolutely <strong>FREE</strong> of charge. No hidden fees. Just secure, connected, and powered.</p>
-      </div>
-    </section>
         
         <!-- The Flyer Image -->
-          <a href="contact.html" aria-label="Get a quote from MD Techsolutions">
-            <img src="images/mdtech-hero-banner.jpg" alt="MD Techsolutions - Securing Today, Protecting Tomorrow." class="hero-image" fetchpriority="high" />
-          </a>
+        <a href="contact.html" aria-label="Get a quote from MD Techsolutions">
+          <img src="images/mdtech-hero-banner.jpg" alt="MD Techsolutions - Securing Today, Protecting Tomorrow." class="hero-image" fetchpriority="high" />
+        </a>
         
-        <!-- Optional: Add buttons over or under the image if you want people to click -->
+        <!-- Buttons -->
         <div class="hero-actions-banner">
           <a href="contact.html" class="btn btn-primary">Request a Free Quote</a>
           <a href="services.html" class="btn btn-outline">Explore Services</a>
         </div>
+      </div>
+    </section>
+
+    <!-- FREE INSTALL HIGHLIGHT -->
+    <section class="container">
+      <div class="free-install-highlight">
+        <h2>⚡ FREE PROFESSIONAL INSTALLATION ⚡</h2>
+        <p>Purchase any CCTV System, Solar Power Setup, or Solar Streetlights from MD Techsolutions and we will install it absolutely <strong>FREE</strong> of charge. No hidden fees. Just secure, connected, and powered.</p>
       </div>
     </section>
 
@@ -117,14 +116,14 @@
         </header>
         <div class="card-grid">
           <article class="card">
-            <!-- Example of how to use real images for the icons -->
-             <div class="card-icon">
+            <div class="card-icon">
               <img src="images/icons/cctv-icon.png" alt="CCTV Icon" width="64" height="64">
             </div>
             <h3>CCTV Installation</h3>
             <p>Professional surveillance systems for homes, offices, and retail. HD/4K cameras, night vision, remote monitoring.</p>
             <ul class="card-features"><li>HD & 4K cameras</li><li>Remote mobile access</li><li>Professional installation</li></ul>
           </article>
+          
           <article class="card">
             <div class="card-icon">
               <img src="images/icons/computers-icon.png" alt="Computers Icon" width="64" height="64">
@@ -133,6 +132,7 @@
             <p>Desktop & laptop sales, repairs, upgrades, networking, and IT support for business and home users.</p>
             <ul class="card-features"><li>Sales & repair</li><li>Hardware upgrades</li><li>Networking setup</li></ul>
           </article>
+          
           <article class="card">
             <div class="card-icon">
               <img src="images/icons/solar-panel.png" alt="Solar Icon" width="64" height="64">
@@ -141,6 +141,7 @@
             <p>Off-grid and hybrid solar solutions for reliable, clean energy. Panels, inverters, batteries, and installation.</p>
             <ul class="card-features"><li>Home & business solar</li><li>Hybrid & off-grid</li><li>Expert installation</li></ul>
           </article>
+          
           <article class="card">
             <div class="card-icon">
               <img src="images/icons/ups.png" alt="UPS Icon" width="64" height="64">
@@ -149,6 +150,7 @@
             <p>Uninterruptible power supplies to protect equipment from outages and surges — home, office, and data centers.</p>
             <ul class="card-features"><li>Surge protection</li><li>Battery backup</li><li>Scalable for any size</li></ul>
           </article>
+          
           <article class="card">
             <div class="card-icon">
               <img src="images/icons/street-light.png" alt="Streetlight Icon" width="64" height="64">
@@ -157,7 +159,8 @@
             <p>All-in-one solar streetlights for roads, estates, and parking areas. Zero electricity bills, low maintenance.</p>
             <ul class="card-features"><li>Motion-sensor models</li><li>Weatherproof build</li><li>Off-grid operation</li></ul>
           </article>
-            <article class="card">
+          
+          <article class="card">
             <div class="card-icon">
               <img src="images/icons/electrical.png" alt="Electrical Icon" width="64" height="64">
             </div>
@@ -169,6 +172,7 @@
               <li>Safety inspections</li>
             </ul>
           </article>
+          
           <article class="card card-cta">
             <div class="card-icon" aria-hidden="true">🛠️</div>
             <h3>Custom Solutions</h3>
@@ -280,7 +284,7 @@
             <p class="pricing-desc">Perfect for small homes and single-office setups.</p>
             <ul class="pricing-features">
               <li>Basic CCTV kit (4 cameras)</li>
-              <li>Installation & setup</li>
+              <li style="color: var(--primary-glow); font-weight: 700;">✔ FREE Installation & setup</li>
               <li>Mobile app configuration</li>
               <li>30-day warranty</li>
               <li class="disabled">UPS system</li>
@@ -295,7 +299,7 @@
             <p class="pricing-desc">For growing businesses needing security + power backup.</p>
             <ul class="pricing-features">
               <li>8-camera HD CCTV system</li>
-              <li>Professional installation</li>
+              <li style="color: var(--primary-glow); font-weight: 700;">✔ FREE Installation & setup</li>
               <li>UPS backup (up to 2kVA)</li>
               <li>Network setup</li>
               <li>6-month warranty</li>
@@ -328,15 +332,15 @@
       <div>
         <a href="index.html" class="logo footer-logo">
           <img src="images/logo.png" alt="MD Techsolutions Logo" class="logo-img" />
-          <span>MDtech<strong>-Solutions</strong></span>
+          <span>MDtech<strong>Solutions</strong></span>
         </a>
         <p class="footer-desc">Secure. Connected. Powered. Your trusted partner for CCTV, computers, solar power, UPS, and solar streetlights.</p>
       </div>
       <div>
         <h4>Services</h4>
         <ul>
-          <li><span aria-hidden="true">📞</span><a href="tel:+639535902652">0953 590 2652</a></li>
-          <l><span aria-hidden="true">📍</span>Serving in Zamboanga del Norte</li>
+          <li><a href="services.html">CCTV Installation</a></li>
+          <li><a href="services.html">Electrical Services</a></li>
           <li><a href="services.html">Computers & IT</a></li>
           <li><a href="services.html">Solar Power Systems</a></li>
           <li><a href="services.html">UPS Solutions</a></li>
@@ -347,6 +351,7 @@
         <h4>Company</h4>
         <ul>
           <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
           <li><a href="index.html#gallery">Portfolio</a></li>
           <li><a href="index.html#testimonials">Testimonials</a></li>
           <li><a href="index.html#pricing">Pricing</a></li>
@@ -356,9 +361,9 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          <li><a href="tel:+639535902652">0953 590 2652</a></li>
           <li><a href="mailto:info@mdtech-solutions.com">info@mdtech-solutions.com</a></li>
-          <li>Your Street Address, Your City</li>
+          <li>Serving in Zamboanga del Norte</li>
         </ul>
       </div>
     </div>
@@ -368,7 +373,7 @@
   </footer>
 
   <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/1234567890?text=Hi%20MDtech-Solutions%2C%20I%27d%20like%20a%20quote." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <a href="https://wa.me/639535902652?text=Hi%20MDtech-Solutions%2C%20I%27d%20like%20a%20quote." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>

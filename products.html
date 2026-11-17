@@ -28,7 +28,7 @@
       <nav class="navbar" aria-label="Main navigation">
         <a href="index.html" class="logo" aria-label="MD Techsolutions home">
           <img src="images/logo.png" alt="MD Techsolutions Logo" class="logo-img" />
-          <span>MDtech<strong>-Solutions</strong></span>
+          <span>MDtech<strong>Solutions</strong></span>
         </a>
         <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
           <span></span><span></span><span></span>
@@ -54,113 +54,129 @@
       </div>
     </section>
 
-    <!-- PRODUCTS GRID -->
     <section class="products-section">
       <div class="container">
-        <div class="products-grid">
-
-          <!-- Product 1 -->
-          <article class="product-card">
-          <!-- The Badge -->
-            <div class="free-install-badge">FREE INSTALL</div>
-            <img src="images/products/cctv-camera.jpg" alt="HD CCTV Camera" class="product-image" loading="lazy" />
-          <div class="product-info">
-    ...
-              <span class="product-category">CCTV</span>
-              <h3>4K Ultra HD Dome Camera</h3>
-              <p>Weatherproof, night vision, and smart motion detection for complete peace of mind.</p>
-              <div class="product-footer">
-                <span class="product-price">Call for Price</span>
-                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Inquire</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Product 2 -->
-          <article class="product-card">
-            <img src="images/products/solar-panel.jpg" alt="Solar Panel" class="product-image" loading="lazy" />
-            <div class="product-info">
-              <span class="product-category">Solar</span>
-              <h3>500W Monocrystalline Panel</h3>
-              <p>High-efficiency solar panels built for maximum energy absorption and durability.</p>
-              <div class="product-footer">
-                <span class="product-price">Call for Price</span>
-                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Inquire</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Product 3 -->
-          <article class="product-card">
-            <img src="images/products/ups-system.jpg" alt="UPS Battery Backup" class="product-image" loading="lazy" />
-            <div class="product-info">
-              <span class="product-category">UPS</span>
-              <h3>2kVA Smart UPS System</h3>
-              <p>Keep your computers and servers running during power outages and surges.</p>
-              <div class="product-footer">
-                <span class="product-price">Call for Price</span>
-                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Inquire</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Product 4 -->
-          <article class="product-card">
-            <img src="images/products/solar-streetlight.jpg" alt="Solar Streetlight" class="product-image" loading="lazy" />
-            <div class="product-info">
-              <span class="product-category">Solar</span>
-              <h3>100W All-in-One Streetlight</h3>
-              <p>Motion-sensor, dusk-to-dawn operation. Perfect for estates, roads, and parking areas.</p>
-              <div class="product-footer">
-                <span class="product-price">Call for Price</span>
-                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Inquire</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Product 5 -->
-          <article class="product-card">
-            <img src="images/products/computer.jpg" alt="Desktop Computer" class="product-image" loading="lazy" />
-            <div class="product-info">
-              <span class="product-category">IT / Computers</span>
-              <h3>Business Desktop PC</h3>
-              <p>Reliable performance for office tasks. Custom builds available for gaming or heavy workloads.</p>
-              <div class="product-footer">
-                <span class="product-price">Call for Price</span>
-                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Inquire</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Product 6 -->
-          <article class="product-card">
-            <img src="images/products/electrical-panel.jpg" alt="Electrical Panel" class="product-image" loading="lazy" />
-            <div class="product-info">
-              <span class="product-category">Electrical</span>
-              <h3>Circuit Breaker Panel</h3>
-              <p>Heavy-duty electrical distribution panels for safe and organized power management.</p>
-              <div class="product-footer">
-                <span class="product-price">Call for Price</span>
-                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Inquire</a>
-              </div>
-            </div>
-          </article>
-
+        
+        <!-- MAIN CATEGORY HEADER -->
+        <div class="cctv-main-header">
+          <h2>CCTV's</h2>
+          <p>High-definition security cameras and complete systems with FREE installation.</p>
         </div>
+
+        <!-- TAB BUTTONS -->
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-target="ch-4">4-Channel Systems</button>
+          <button class="tab-btn" data-target="ch-8">8-Channel Systems</button>
+          <button class="tab-btn" data-target="ch-16">16-Channel Systems</button>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB CONTENT: 4-CHANNEL                     -->
+        <!-- ========================================== -->
+        <div id="ch-4" class="tab-content active">
+          <div class="showcase-wrapper">
+            
+            <!-- Left Side: Info -->
+            <div class="showcase-info">
+              <h3>4-Channel Security Kit</h3>
+              <p>Perfect for small homes, sari-sari stores, or single-room offices. Secure your property with crystal-clear HD monitoring.</p>
+              
+              <ul class="showcase-features">
+                <li><strong>Includes:</strong> 4 HD Cameras + 1 DVR + 1TB Hard Drive</li>
+                <li><strong>Basic Setup:</strong> Wired connection for maximum reliability</li>
+                <li><strong>Wireless Setup:</strong> No messy wires, easy to move around (ideal for renters)</li>
+                <li><strong>Access:</strong> View live footage on your phone anytime, anywhere</li>
+              </ul>
+
+              <!-- Bottom Badges -->
+              <div class="showcase-badges">
+                <span class="badge badge-free">⚡ FREE Installation</span>
+                <span class="badge badge-affordable">💰 Very Affordable</span>
+              </div>
+            </div>
+
+            <!-- Right Side: Big Image -->
+            <img src="images/products/cctv-4ch-kit.jpg" alt="4 Channel CCTV Kit" class="showcase-image" loading="lazy" />
+            
+          </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB CONTENT: 8-CHANNEL                     -->
+        <!-- ========================================== -->
+        <div id="ch-8" class="tab-content">
+          <div class="showcase-wrapper">
+            
+            <!-- Left Side: Info -->
+            <div class="showcase-info">
+              <h3>8-Channel Security Kit</h3>
+              <p>Cover more angles for your growing business. Great for medium-sized shops, clinics, or two-story homes.</p>
+              
+              <ul class="showcase-features">
+                <li><strong>Includes:</strong> 8 HD Cameras + 1 DVR + 2TB Hard Drive</li>
+                <li><strong>Basic Setup:</strong> Wired connection for ultimate stability</li>
+                <li><strong>Wireless Setup:</strong> Flexible placement with wireless cameras</li>
+                <li><strong>Access:</strong> Multi-user mobile app access for your team</li>
+              </ul>
+
+              <!-- Bottom Badges -->
+              <div class="showcase-badges">
+                <span class="badge badge-free">⚡ FREE Installation</span>
+                <span class="badge badge-affordable">💰 Very Affordable</span>
+              </div>
+            </div>
+
+            <!-- Right Side: Big Image -->
+            <img src="images/products/cctv-8ch-kit.jpg" alt="8 Channel CCTV Kit" class="showcase-image" loading="lazy" />
+            
+          </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB CONTENT: 16-CHANNEL                    -->
+        <!-- ========================================== -->
+        <div id="ch-16" class="tab-content">
+          <div class="showcase-wrapper">
+            
+            <!-- Left Side: Info -->
+            <div class="showcase-info">
+              <h3>16-Channel Security Kit</h3>
+              <p>Full coverage for large warehouses, factories, schools, or estates. Heavy-duty equipment built to last.</p>
+              
+              <ul class="showcase-features">
+                <li><strong>Includes:</strong> 16 HD Cameras + 1 DVR + 4TB Hard Drive</li>
+                <li><strong>Basic Setup:</strong> Industrial-grade wired infrastructure</li>
+                <li><strong>Wireless Setup:</strong> Long-range wireless transmitters for hard-to-reach areas</li>
+                <li><strong>Access:</strong> Centralized control room monitoring</li>
+              </ul>
+
+              <!-- Bottom Badges -->
+              <div class="showcase-badges">
+                <span class="badge badge-free">⚡ FREE Installation</span>
+                <span class="badge badge-affordable">💰 Very Affordable</span>
+              </div>
+            </div>
+
+            <!-- Right Side: Big Image -->
+            <img src="images/products/cctv-16ch-kit.jpg" alt="16 Channel CCTV Kit" class="showcase-image" loading="lazy" />
+            
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- BOTTOM CTA -->
     <section class="why-us">
       <div class="container" style="text-align:center;">
-        <h2>Looking for something specific?</h2>
-        <p style="color:rgba(255,255,255,0.85);max-width:600px;margin:1rem auto 2rem;">We source high-quality hardware. If it's not listed here, just ask!</p>
-        <a href="contact.html" class="btn" style="background:#fff;color:var(--primary);">Request a Product</a>
+        <h2>Not sure which package fits you?</h2>
+        <p style="color:rgba(255,255,255,0.85);max-width:600px;margin:1rem auto 2rem;">Message us on WhatsApp or request a free quote. We'll help you choose the perfect setup for your budget.</p>
+        <a href="contact.html" class="btn" style="background:#fff;color:var(--primary);">Request a Custom Quote</a>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER (Same as other pages) -->
+  <!-- FOOTER -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
       <div>
@@ -211,6 +227,7 @@
   </a>
 
   <button class="back-to-top" aria-label="Back to top">↑</button>
+  
   <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
     <button class="lightbox-close" aria-label="Close image preview">✕</button>
     <img src="" alt="" />
