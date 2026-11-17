@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
 
 :root {
-  /* New Cyber-Tech Palette */
+  /* Cyber-Tech Palette */
   --primary: #0077ff;
   --primary-glow: #00aaff;
   --primary-dark: #003bb3;
@@ -23,38 +23,52 @@
   --bg-soft: #0a1128;
   --bg-elevated: #111c44;
   
-  --border: #1e3a8a; /* Dark blue border */
+  --border: #1e3a8a;
   --header-bg: rgba(5, 9, 20, 0.95);
   --footer-bg: #02040a;
   
-  /* Removed rounded corners for a sharp tech look */
   --radius: 0px; 
   --radius-sm: 2px;
   
   --shadow-glow: 0 0 15px rgba(0, 119, 255, 0.3);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.6);
   --transition: 0.2s ease;
 }
 
-/* Force Dark Theme by default */
-html { data-theme="dark"; }
+/* Base Styles */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 body {
   font-family: 'Rajdhani', sans-serif;
+  line-height: 1.65; 
+  color: var(--text); 
   background-color: var(--bg);
-  color: var(--text);
   background-image: 
     radial-gradient(circle at 15% 50%, rgba(0, 119, 255, 0.08), transparent 25%),
     radial-gradient(circle at 85% 30%, rgba(0, 170, 255, 0.05), transparent 25%);
   background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Typography Override */
+/* Typography */
 h1, h2, h3, h4, .logo span {
   font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: var(--text);
 }
 
+img, svg { max-width: 100%; display: block; }
+a { color: var(--primary-glow); text-decoration: none; transition: color var(--transition); }
+a:hover { color: #fff; }
+ul { list-style: none; }
+
+h1 { font-size: clamp(2rem, 5.5vw, 3.5rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-light); margin-bottom: 0.75rem; }
 /* ... Keep the rest of the resets ... */
 
 /* ---------- Dark Mode ---------- */
@@ -171,10 +185,12 @@ h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: 
 
 /* ---------- Hero ---------- */
 .hero {
-  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 60%, #fef3c7 100%);
-  padding: clamp(3rem, 8vw, 6rem) 0; text-align: center;
-  transition: background var(--transition);
+  background: linear-gradient(135deg, #050914 0%, #0a1128 60%, #111c44 100%);
+  padding: clamp(3rem, 8vw, 6rem) 0; 
+  text-align: center;
+  border-bottom: 1px solid var(--border);
 }
+
 [data-theme="dark"] .hero {
   background: linear-gradient(135deg, #0b1220 0%, #111a2e 60%, #1e293b 100%);
 }
@@ -210,8 +226,9 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
 .card-features { margin-top: auto; padding-top: 1rem; border-top: 1px dashed var(--border); }
 .card-features li { position: relative; padding-left: 1.4rem; font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.4rem; }
 .card-features li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
-.card-cta { background: linear-gradient(135deg, #eff6ff, #fef3c7); }
-[data-theme="dark"] .card-cta { background: linear-gradient(135deg, #111a2e, #1e293b); }
+.card-cta { 
+  background: linear-gradient(135deg, #111c44, #1e3a8a); 
+}
 
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }

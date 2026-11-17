@@ -3,22 +3,6 @@
 // ============================================
 
 // ---- Dark Mode ----
-(function initTheme() {
-  const saved = localStorage.getItem('theme');
-  // Default to dark if no preference is saved
-  const theme = saved || 'dark'; 
-  document.documentElement.setAttribute('data-theme', theme);
-})();
-
-const themeToggle = document.querySelector('.theme-toggle');
-if (themeToggle) {
-  themeToggle.addEventListener('click', () => {
-    const current = document.documentElement.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-  });
-}
 
 // ---- Mobile Menu ----
 const menuToggle = document.querySelector('.menu-toggle');
