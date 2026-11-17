@@ -111,26 +111,29 @@ if (backToTop) {
   });
 }
 
-// ---- Product Tabs Logic ----
-const tabButtons = document.querySelectorAll('.tab-btn');
-const tabContents = document.querySelectorAll('.tab-content');
+// ---- Product Tabs Logic (Multi-Category Support) ----
+const tabGroups = document.querySelectorAll('.products-section');
 
-if (tabButtons.length > 0) {
-  tabButtons.forEach(button => {
+tabGroups.forEach(group => {
+  // Find all buttons and contents ONLY within this specific category section
+  const buttons = group.querySelectorAll('.tab-btn');
+  const contents = group.querySelectorAll('.tab-content');
+
+  buttons.forEach(button => {
     button.addEventListener('click', () => {
-      // 1. Remove 'active' class from all buttons and contents
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
+      // 1. Remove 'active' from buttons and contents in THIS group only
+      buttons.forEach(btn => btn.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
 
-      // 2. Add 'active' class to the clicked button
+      // 2. Add 'active' to the clicked button
       button.classList.add('active');
 
-      // 3. Find the target content ID and show it
+      // 3. Show the target content
       const targetId = button.getAttribute('data-target');
-      const targetContent = document.getElementById(targetId);
+      const targetContent = group.querySelector('#' + targetId);
       if (targetContent) {
         targetContent.classList.add('active');
       }
     });
   });
-}
+});
